@@ -19,12 +19,20 @@ namespace snake_ladder
                 Console.WriteLine("Roll the dice");
                 Console.ReadLine();
 
-                
+                int playerRandomNum;
+                Random random = new Random();
+                for (int i = 0; i < 10; i++)
+                {
+                    playerRandomNum = random.Next(1, 7);
+                    Console.WriteLine("Outcome : " + (playerRandomNum));
+                    Console.ReadLine();
+                }
 
 
 
 
-                
+
+
 
 
             }
