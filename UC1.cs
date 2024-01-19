@@ -11,7 +11,7 @@ namespace snake_ladder
         static void Main(string[] args)
         {
             int playerposition = 0;
-            Console.WriteLine("Hello,Welcome to snake and ladder game");
+            Console.WriteLine("Hello!Welcome to snake and ladder game");
 
             while(playerposition < 100)
             {
@@ -24,7 +24,8 @@ namespace snake_ladder
 
 
 
-                
+
+
 
 
             }
