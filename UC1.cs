@@ -8,12 +8,14 @@ namespace snake_ladder
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
+
+
         {
             int playerposition = 0;
             Console.WriteLine("Hello,Welcome to snake and ladder game");
 
-            while(playerposition < 100)
+            while (playerposition < 100)
             {
                 Console.WriteLine("Current position of the player:" + (playerposition));
                 Console.WriteLine("Roll the dice");
@@ -21,22 +23,33 @@ namespace snake_ladder
 
                 int playerRandomNum;
                 Random random = new Random();
-                for (int i = 0; i < 10; i++)
+                 
                 {
                     playerRandomNum = random.Next(1, 7);
                     Console.WriteLine("Outcome : " + (playerRandomNum));
                     Console.ReadLine();
                 }
+                
 
-
-
-
-
-
-
-
+                Console.ReadLine();
             }
-
         }
     }
 }
+
+            
+
+        
+
+
+
+
+
+
+
+
+            
+
+        
+    
+
