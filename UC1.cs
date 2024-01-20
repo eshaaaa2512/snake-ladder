@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,19 +15,22 @@ namespace snake_ladder
         {
             int playerposition = 0;
             Console.WriteLine("Hello,Welcome to snake and ladder game");
+            int count = 0;
+
 
             while (playerposition <= 100)
             {
+                count++;
                 Console.WriteLine("Current position of the player:" + (playerposition));
                 Console.WriteLine("Roll the dice");
-               
+
 
                 int playerRandomNum;
                 Random random = new Random();
 
                 playerRandomNum = random.Next(1, 7);
                 Console.WriteLine("Outcome : " + (playerRandomNum));
-                
+
 
 
                 int option = random.Next(0, 3);
@@ -56,58 +60,69 @@ namespace snake_ladder
                         else
                         {
                             playerposition = Math.Max(playerposition, 0);
-                            Console.WriteLine("Congratulation, U reached the final position");
+
                         }
                         break;
                 }
 
-                            
 
 
-                        
-                }
-                Console.ReadLine();
+
+
+                Console.WriteLine("Congratulation, U reached the final position");
+
             }
+            Console.WriteLine(count);
+                Console.ReadLine();
         }
-
     }
-
-
-                            
-
-
-
-
-     
-
-
+}
 
                 
-
-
-
-                
-
-
-                
-
-
-
-
-
-                        
-
-        
-
-
-
-
-
-
-
-
             
+      
 
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
