@@ -9,11 +9,13 @@ namespace snake_ladder
 {
     internal class Program
     {
-        static void Main()
+        static void Main(int playerRandomNum)
 
 
         {
             int playerposition = 0;
+            int playerposition1 = 0;
+
             Console.WriteLine("Hello,Welcome to snake and ladder game");
             int count = 0;
 
@@ -63,16 +65,23 @@ namespace snake_ladder
 
                         }
                         break;
+                    case 3:
+                        Console.WriteLine($"Ladder! roll the dice again " + playerRandomNum + "positio.");
+                        playerposition1 += playerRandomNum();
+                        break;
+                        
                 }
+                Console.WriteLine("The position of the ");
 
 
+                
 
 
 
                 Console.WriteLine("Congratulation, U reached the final position");
 
             }
-            Console.WriteLine(count);
+            Console.WriteLine("The number of times the dice is rolled:" + (count));
                 Console.ReadLine();
         }
     }
